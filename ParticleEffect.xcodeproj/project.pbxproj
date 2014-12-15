@@ -18,6 +18,9 @@
 		291C5B461714DAD400B4CA9C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 291C5B451714DAD400B4CA9C /* Default-568h@2x.png */; };
 		291C5B491714DAD400B4CA9C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291C5B471714DAD400B4CA9C /* MainStoryboard.storyboard */; };
 		291C5B4C1714DAD400B4CA9C /* SETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291C5B4B1714DAD400B4CA9C /* SETViewController.m */; };
+		291C5B531714DB0500B4CA9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291C5B521714DB0500B4CA9C /* QuartzCore.framework */; };
+		291C5B561714DB4400B4CA9C /* particleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291C5B551714DB4400B4CA9C /* particleView.m */; };
+		291C5B581714DC5E00B4CA9C /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 291C5B571714DC5E00B4CA9C /* Particles_fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		291C5B481714DAD400B4CA9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		291C5B4A1714DAD400B4CA9C /* SETViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SETViewController.h; sourceTree = "<group>"; };
 		291C5B4B1714DAD400B4CA9C /* SETViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SETViewController.m; sourceTree = "<group>"; };
+		291C5B521714DB0500B4CA9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		291C5B541714DB4400B4CA9C /* particleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particleView.h; path = ../particleView.h; sourceTree = "<group>"; };
+		291C5B551714DB4400B4CA9C /* particleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = particleView.m; path = ../particleView.m; sourceTree = "<group>"; };
+		291C5B571714DC5E00B4CA9C /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291C5B531714DB0500B4CA9C /* QuartzCore.framework in Frameworks */,
 				291C5B301714DAD400B4CA9C /* UIKit.framework in Frameworks */,
 				291C5B321714DAD400B4CA9C /* Foundation.framework in Frameworks */,
 				291C5B341714DAD400B4CA9C /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +64,7 @@
 		291C5B231714DAD400B4CA9C = {
 			isa = PBXGroup;
 			children = (
+				291C5B521714DB0500B4CA9C /* QuartzCore.framework */,
 				291C5B351714DAD400B4CA9C /* ParticleEffect */,
 				291C5B2E1714DAD400B4CA9C /* Frameworks */,
 				291C5B2D1714DAD400B4CA9C /* Products */,
@@ -83,6 +92,8 @@
 		291C5B351714DAD400B4CA9C /* ParticleEffect */ = {
 			isa = PBXGroup;
 			children = (
+				291C5B551714DB4400B4CA9C /* particleView.m */,
+				291C5B541714DB4400B4CA9C /* particleView.h */,
 				291C5B3E1714DAD400B4CA9C /* SETAppDelegate.h */,
 				291C5B3F1714DAD400B4CA9C /* SETAppDelegate.m */,
 				291C5B471714DAD400B4CA9C /* MainStoryboard.storyboard */,
@@ -96,6 +107,7 @@
 		291C5B361714DAD400B4CA9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				291C5B571714DC5E00B4CA9C /* Particles_fire.png */,
 				291C5B371714DAD400B4CA9C /* ParticleEffect-Info.plist */,
 				291C5B381714DAD400B4CA9C /* InfoPlist.strings */,
 				291C5B3B1714DAD400B4CA9C /* main.m */,
@@ -164,6 +176,7 @@
 				291C5B441714DAD400B4CA9C /* Default@2x.png in Resources */,
 				291C5B461714DAD400B4CA9C /* Default-568h@2x.png in Resources */,
 				291C5B491714DAD400B4CA9C /* MainStoryboard.storyboard in Resources */,
+				291C5B581714DC5E00B4CA9C /* Particles_fire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +190,7 @@
 				291C5B3C1714DAD400B4CA9C /* main.m in Sources */,
 				291C5B401714DAD400B4CA9C /* SETAppDelegate.m in Sources */,
 				291C5B4C1714DAD400B4CA9C /* SETViewController.m in Sources */,
+				291C5B561714DB4400B4CA9C /* particleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +315,7 @@
 				291C5B511714DAD400B4CA9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
