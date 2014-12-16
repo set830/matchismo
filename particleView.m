@@ -22,7 +22,7 @@
     
     //this is on the home computer!  whaaaaaat?
     
-    //this is branchTwo, modified by homeComp
+    //this is branchTwo, modified by aptComp again
 }
 
 -(void)awakeFromNib
