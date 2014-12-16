@@ -10,4 +10,6 @@
 
 @interface SETViewController : UIViewController
 
+//testing if this is picked up even though it's inside a folder from within the git init tracker
+
 @end

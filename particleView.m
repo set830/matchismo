@@ -24,6 +24,8 @@
     
     //this is branchTwo, modified by aptComp again
     //merged with master
+    
+    //testing whether the .git picks up stuff from inside a folder
 }
 
 -(void)awakeFromNib
